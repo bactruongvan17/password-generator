@@ -1,0 +1,123 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-size: 1em;
+    font-family: "Radio Canada Big", sans-serif;
+    font-optical-sizing: auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#wrapper {
+    width: 360px;
+    height: 480px;
+    background: #41146b;
+    box-shadow: 0 0 2px 2px #747373, 0 0 0 16px #41146b, 0 0 0 32px #14286b;
+    margin: 100px auto 0 auto;
+    padding: 20px;
+    color: #cccccc;
+    border-radius: 4px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.6em;
+    margin-bottom: 36px;
+}
+
+.result {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 36px;
+}
+
+.result input {
+    border: none;
+    border-radius: 4px;
+    background-color: #14286b;
+    height: 48px;
+    width: 100%;
+    padding: 0 12px;
+    color: #cccccc;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+
+.result input:focus {
+    outline: none;
+}
+
+.copy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(227, 236, 228, 0.2);
+    width: 48px;
+    height: 48px;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.copy:hover {
+    background-color: rgba(227, 236, 228, 0.3);
+}
+
+.copy img {
+    width: 24px;
+    height: 24px;
+}
+
+.conditional {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.con-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.con-item-label {
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+input[name="pass-length"] {
+    width: 40px;
+    height: 28px;
+}
+
+input[name="pass-length"]:focus {
+    outline: none;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+button#generate {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    background-color: #14286b;
+    color: #cccccc;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+button#generate:hover {
+    background-color: #182f7c;
+}
